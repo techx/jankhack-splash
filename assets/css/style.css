@@ -1,0 +1,134 @@
+/* basic responsive grid based layout stuff */
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.pane {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.unit {
+  margin-left: 3%;
+  display: inline-block;
+}
+
+.unit:first-child {
+  margin-left: 0;
+}
+
+.full {
+  width: 100%;
+}
+
+.one-of-two {
+  width: 48%;
+}
+
+@media only screen and (max-width : 960px) {
+  /* change it up in here */
+}
+
+/* actual site stuff */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #1e1e1e;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: -0.25rem;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2rem;
+  padding-top: 1rem;
+  letter-spacing: 0.4rem;
+}
+
+.splash {
+  height: 49%;
+  background: #efefef;
+}
+
+.content.pane {
+  height: 100%;
+}
+
+.content.unit {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.info p:first-child {
+  margin-top: 0;
+}
+
+.info p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.info {
+  padding-top: 1.5rem;
+  height: 35%;
+  background: #f9c00c;
+}
+
+.stripe-1 {
+  height: 8%;
+  background: #00b9f1;
+}
+
+.stripe-2 {
+  height: 5%;
+  background: #7200da;
+}
+
+.stripe-3 {
+  height: 3%;
+  background: #f9320c;
+}
+
+.emphasis {
+  padding: 0.5rem 0.5rem 0.25rem;
+  border-radius: 3px;
+}
+
+.emphasis.purple {
+  background: #7200da;
+  color: #efefef;
+}
+
+.emphasis.red {
+  background: #f9320c;
+  color: #efefef;
+}
+
+a {
+  color: #f9320c;
+  text-decoration: none;
+}
+
+a:hover {
+  padding-left: 3rem;
+}
+
+a:active {
+  text-transform: uppercase;
+}
