@@ -126,6 +126,8 @@ h2 {
 .stripe-1 {
   height: 8%;
   background: #00b9f1;
+  text-align: center;
+  padding: 0.25rem;
 }
 
 .stripe-2 {
@@ -164,4 +166,9 @@ a:hover {
 
 a:active {
   text-transform: uppercase;
+}
+
+.stripe-1 img {
+  display: inline;
+  height: 100%;
 }
