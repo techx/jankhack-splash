@@ -22,7 +22,7 @@
   display: inline-block;
 }
 
-.unit:first-child {
+.unit.first {
   margin-left: 0;
 }
 
@@ -68,6 +68,12 @@
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
+  }
+
+  .unit {
+    display: block;
+    margin-left: 0;
+    width: 97%;
   }
 }
 
@@ -140,6 +146,33 @@ marquee {
   background: #f9320c;
 }
 
+.details > h1 {
+  background: #f9c00c;
+  text-align: center;
+}
+
+.details h1.first {
+  padding-top: 2rem;
+}
+.details h1.last {
+  padding-bottom: 2rem;
+}
+
+.details {
+  height: 100%;
+  background: #efefef;
+}
+
+.details .pane h1 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.details p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
 .emphasis {
   padding: 0.5rem 0.5rem 0.25rem;
   border-radius: 3px;
@@ -156,8 +189,9 @@ marquee {
 }
 
 a {
-  color: #f9320c;
+  color: #1e1e1e;
   text-decoration: none;
+  font-style: italic;
 }
 
 a:active {
@@ -171,50 +205,58 @@ a:active {
 
 @keyframes rotate {
   0% {
-		transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   3% {
-		transform: rotate(8deg);
+    transform: rotate(8deg);
   }
   6% {
-		transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   9% {
-		transform: rotate(-8deg);
+    transform: rotate(-8deg);
   }
   12% {
-		transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-	100% {
-		transform: rotate(0deg);
-	}
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @-webkit-keyframes rotate {
   0% {
-		-webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   3% {
-		-webkit-transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
   }
   6% {
-		-webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   9% {
-		-webkit-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
   }
   12% {
-		-webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
-	100% {
-		-webkit-transform: rotate(0deg);
-	}
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
 }
 
 .button {
-	position: absolute;
+  display: block;
   -webkit-animation: rotate 3s linear 0s infinite;
   animation: rotate 3s linear 0s infinite;
-	width: 10rem;
-	text-align: center;
+  width: 10rem;
+  text-align: center;
+}
+
+.about {
+  font-size: 1rem;
+}
+
+.group {
+  position: absolute;
 }
